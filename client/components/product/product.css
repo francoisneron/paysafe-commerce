@@ -1,0 +1,50 @@
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+    color: #6ecc9d;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.pricing {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+.add-to-cart{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.add-to-cart .btn-primary { 
+	border-color: #6ecc9d; 
+	background-color: #6ecc9d;
+}
+
+.add-to-cart .btn-primary:hover { 
+	border-color: #3caa73; 
+	background-color: #3caa73; 
+}
+
+a {
+	color: #6ecc9d;
+}
+
+a:hover {
+	color: #3caa73;
+}

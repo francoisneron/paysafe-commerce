@@ -1,0 +1,35 @@
+/* cart */
+.cart ul {
+  margin-bottom: .7em;
+}
+
+.cart-item {
+  margin-bottom: .3em;
+}
+
+.cart-item-name {
+  display: inline-block;
+}
+
+.cart-item-price {
+  float: right;
+}
+
+.cart-total {
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.1em;
+  text-align: right;
+}
+
+.cart-checkout a{
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.1em;
+}
+
+.cart-quick-checkout a{
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.1em;
+}

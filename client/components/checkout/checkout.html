@@ -1,0 +1,35 @@
+<template name="checkout">
+	<div class="panel panel-info">
+				<div class="panel-heading">
+					<div class="panel-title">
+						<div class="row">
+							<div class="col-xs-6">
+								<h5><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</h5>
+							</div>
+							<div class="col-xs-6">
+								<button id="back-shopping" type="button" class="btn btn-primary btn-block">
+									<span class="glyphicon glyphicon-share-alt"></span> Continue shopping
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel-body">
+					{{#each items}}
+    					{{> item this}}
+    				{{/each}}
+				</div>
+				<div class="panel-footer">
+					<div class="row text-center">
+						<div class="col-xs-9">
+							<h4 class="text-right">Total <strong>{{cartTotal}} {{cartCurrency}}</strong></h4>
+						</div>
+						<div class="col-xs-3">
+							<button type="button" class="btn btn-success btn-block">
+								Checkout
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+</template>

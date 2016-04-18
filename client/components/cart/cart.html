@@ -1,0 +1,38 @@
+<template name="cart">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      {{#if items.count}}
+      <ul>
+        {{#each items}}
+        <li class="cart-item well">
+          <span class="cart-item-name">{{this.name}}</span>
+          <span class="cart-item-price">{{this.price}} {{this.currency}}</span>
+        </li>
+        {{/each}}
+      </ul>
+      {{else}}
+      <div class="alert alert-info">Cart is empty</div>
+      {{/if}}
+      <hr>
+      <div class="cart-total">Total: {{cartTotal}} {{cartCurrency}}</div>
+      {{#if items.count}}
+      <hr>
+       <div class="cart-checkout pull-right">
+          <a class="btn btn-warning">
+            Checkout
+          </a>
+      </div>
+      {{/if}}
+    </div>
+  </div>
+  <hr>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="cart-quick-checkout pull-right">
+        <a class="btn btn-warning">
+          Quick Checkout
+        </a>
+      </div>
+    </div>
+  </div>
+</template>

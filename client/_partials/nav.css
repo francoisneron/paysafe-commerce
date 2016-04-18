@@ -1,0 +1,36 @@
+.navbar {
+	height: 120px;
+    font-size: 25px;
+    line-height: normal;
+}
+
+.navbar-inverse {
+    background-color: #333;
+    border-color: #080808;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+    color: #6ecc9d;
+}
+
+.navbar-fixed-top .nav {
+    padding: 40px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+
+@media(min-width:768px) {
+    body {
+        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+}

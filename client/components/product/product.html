@@ -1,0 +1,27 @@
+<template name="product">
+  <div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="thumbnail">
+      <img src={{data.image}} alt="product image">
+      <div class="caption">
+          <h4><a href={{data.url}} target="_blank">{{data.name}}</a>
+          </h4>
+          <p>{{data.description}}</p>
+      </div>
+      <div class="pricing">
+          <p><h4>{{data.price}} {{data.currency}}</h4></p>
+      </div>
+
+      <div class="add-to-cart">
+          <p>
+              <a class="btn {{#if data.inCart}}btn-danger{{else}}btn-primary{{/if}}">
+              {{#if data.inCart}}
+                Remove
+              {{else}}
+                Add to cart
+              {{/if}}
+              </a>
+          </p>
+      </div>
+    </div>
+  </div>
+</template>
