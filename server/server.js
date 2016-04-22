@@ -22,12 +22,13 @@ Meteor.methods({
 
     submitOrders: function(totalAmount, currencyCode) {
     	var myFuture = new Future();
+    	var time = new Date().getTime();
 
     	var urlOrders = url + "v1/orders";
 
     	var json = {
-		  "merchantRefNum" : "ABCDE123451221321323213213",
-		  "currencyCode"   : "CAD",
+		  "merchantRefNum" : "MERCHANT_REF_" + time,
+		  "currencyCode"   : currencyCode,
 		  "totalAmount"    : totalAmount*100
 		};
 

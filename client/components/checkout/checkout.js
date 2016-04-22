@@ -37,7 +37,7 @@ Template.checkout.events({
 
     console.log(total);
 
-    $("body").addClass("loading");
+    $("#buy-checkout").button('loading');
 
     Meteor.call('submitOrders', total, currency, function(err,res){ 
       if ( err ) {
@@ -46,7 +46,7 @@ Template.checkout.events({
       } else {
         console.log( res );
       }
-      $("body").removeClass("loading");
+       $("#buy-checkout").button('reset');
     });
   }
 });
